@@ -43,7 +43,7 @@ body{
 #menu-topo a{
     font-size: 2rem;
     font-family: var(--geologica);
-    color: var(--branco);
+    color: var(--azulescuro);
     text-decoration: none;
     padding-bottom: 5px;
 }
@@ -181,5 +181,8 @@ body{
     font-size: 1.5rem;
 }
 #agendar{
+    min-height: 800px;
+}
+#suiba{
     min-height: 800px;
 }
