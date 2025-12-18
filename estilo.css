@@ -3,36 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
     --azul:#0077B6;
-    --azulescuro: #1E376A;
-    --cinza: #F5F5F5;
-    --estranha: #EEE9E9;
-    --preto: #000000;
-    --branco: #FFFFFF;
-    --poppins: "Poppins", sans-serif;
-    --inter: "Inter", sans-serif;
-    --geologica: "Geologica", sans-serif;
+    --azulescuro:#1E376A;
+    --cinza:#F5F5F5;
+    --estranha:#EEE9E9;
+    --preto:#000000;
+    --branco:#FFFFFF;
+    --poppins:"Poppins", sans-serif;
+    --inter:"Inter", sans-serif;
+    --geologica:"Geologica", sans-serif;
 }
+
 .container{
-    max-width: 1380px ;
+    max-width: 1380px;
     margin: 0 auto;
 }
+
 body{
     font-family: var(--poppins);
 }
+
 #topo{
-    min-height:400px ;
+    min-height: 400px;
     padding: 20px 10px;
-    background-image: linear-gradient(var(--azul));
+    background-image: linear-gradient(var(--azul), var(--azulescuro));
 }
+
 .grid-topo{
     display: grid;
-    grid-template-columns: 1fr  1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
 }
+
 #menu-topo{
-    grid-column: 2/4;
+    grid-column: 2 / 4;
 }
+
 #menu-topo > ul{
     display: flex;
     list-style: none;
@@ -40,6 +47,7 @@ body{
     align-items: center;
     height: 80%;
 }
+
 #menu-topo a{
     font-size: 2rem;
     font-family: var(--geologica);
@@ -47,142 +55,331 @@ body{
     text-decoration: none;
     padding-bottom: 5px;
 }
+
+
 #menu-topo a:hover{
-    color: var(--azulescuro-);
     border-bottom: 1px solid var(--azulescuro);
 }
+
 #menu-topo .atual{
-    color: var(--azulescuro-);
     border-bottom: 1px solid var(--azulescuro);
 }
+
 #info{
-    min-height: 955px;
+    min-height: 600px   ;
     background-color: var(--cinza);
-    padding: 20px 10px  ;
+    padding: 20px 10px;
 }
-#info h1{
-    font-family: var(--poppins);
-    font-size: 4rem;
-    font-weight: 900;
-    text-align: center;
-}
+
 .primeiro{
     display: flex;
     align-items: flex-start;
-    gap: 15px;        /* espaço entre imagem e texto*/
+    gap: 15px;
+    margin: 5%;
+    
 }
-.texton {
-      font-size: 1.8rem;
-      line-height: 1.5;
-      display: block; 
-      font-weight: 900;
-      font-family: var(--poppins);
+
+.texton{
+    font-size: 1 rem;
+    line-height: 1.5;
+    display: block;
+    font-weight: 200;
+    font-family: var(--poppins);
 }
-.texton h2{
-    margin: 15px 0;
-}
+
 .texto{
     min-height: 1350px;
     padding: 10px 20px;
     background-color: var(--branco);
 }
-#texto h1{
-    font-weight: 900;
-    font-size: 4rem;
-    text-align: center;
-}
-#texto h3{
-    font-weight: 900;
-    font-size: 2rem;
-    font-family: var(--geologica);
-    text-align: center;
-}
-.duas-imagens article{
+
+.duas-imagens{
     display: flex;
     justify-content: center;
     gap: 20px;
     margin: 15px;
 }
+
 #servico{
-    min-height: 1850px;
+    min-height: 600px;
     background-color: var(--estranha);
     padding: 10px 20px;
 }
+
 #doido{
     display: block;
     margin: 15px auto;
 }
-#servico h1{
-    text-align: center;
-    font-weight: 900;
-    font-size: 4rem;
-}
+
 .servicos{
     margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    
+    
+    
 }
+
 #estabelecimento{
-    min-height: 1000px;
+    min-height: 500px;
     padding: 10px 20px;
     background-color: var(--cinza);
 }
 
-#estabelecimento h1{
-    font-weight: 900;
-    font-size: 3rem;
-}
-.telefone article h2{
-    margin-top: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 .telefone article{
-    display: flex;              
-  justify-content: center;    
-  gap: 40px;                  
-  flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
-.telefone article img{
- border-radius: 50px;        
-  object-fit: cover;  
 
+.telefone article img{
+    border-radius: 50px;
+    object-fit: cover;
 }
+
 #final{
-    min-height: 830px;
+    min-height: 630px;
     padding: 20px 10px;
     background-color: var(--azul);
 }
-.ultima{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
+
 .botaoarea{
     text-align: center;
 }
+
 .botao{
-     display: inline-block;
-  background: linear-gradient(90deg, #007bc0, #00b3ff);
-  color: white;
-  font-weight: bold;
-  padding: 15px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+    display: inline-block;
+    background: linear-gradient(90deg, #007bc0, #00b3ff);
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
+
 .botao:hover{
     background: linear-gradient(90deg, #0099e0, #00ccff);
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
-#final h2{
-    font-size: 2rem;
-}
-#final p{
-    font-size: 1.5rem;
-}
+
 #agendar{
-    min-height: 800px;
+    min-height: 600px;
 }
+
 #suiba{
-    min-height: 800px;
+    margin: 10%;
+    text-align: center;
+    font-weight: 0;
 }
+#contato{
+    text-align: center;
+}
+#adelia{
+text-align: center;
+}
+#servico1{
+    text-align: center;
+    font-weight: 900;
+    font-size:2rem;
+}
+#sobre{
+    text-align: center;
+}
+.pinga{
+    text-align: center;
+}
+.agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.agendamento h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.form-agendamento {
+    width: 100%;
+    max-width: 450px;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.form-agendamento button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2b7cff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-agendamento button:hover {
+    background-color: #1f5fd1;
+}
+
+.botaoarea {
+    margin-top: 25px;
+}
+
+.botao {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 6px;
+}
+.pinga h3{
+    max-width: 900px;
+    margin: 15px auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.contatos{
+    display: inline;
+    justify-content: left;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+@media (max-width: 768px){
+
+    .grid-topo{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #menu-topo{
+        grid-column: 1;
+    }
+
+    #menu-topo > ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+   
+    .primeiro{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .primeiro img{
+        width: 60%;
+    }
+
+   
+    .servicos{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .servicos img{
+        width: 300px;
+        max-width: 100%;
+    }
+
+    
+    .telefone article{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .telefone article img{
+        width: 60%;
+    }
+
+    
+    .ultima{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+@media (max-width: 425px){
+
+    
+    h1{
+        font-size: 1.6rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    
+    #menu-topo a{
+        font-size: 1.2rem;
+    }
+
+    
+    .primeiro img{
+        width: 80%;
+    }
+
+    
+    .duas-imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .duas-imagens img{
+        width: 90%;
+    }
+
+    
+    .servicos{
+        grid-template-columns: 1fr;
+    }
+
+    .servicos img{
+        width: 90%;
+    }
+
+    
+    .botao{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+

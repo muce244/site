@@ -35,43 +35,47 @@
     
     
     <main id="conteudo">
-        <section>
-            <h1>Agende sua Consulta</h1>
+        <section class="agendamento">
+    <h1>Agende sua Consulta</h1>
 
-    <div>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
+    <form class="form-agendamento" action="#" method="post">
+
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </div>
+
+        <div class="campo">
+            <label for="data">Data da Consulta</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+
+        <div class="campo">
+            <label for="hora">Hora da Consulta</label>
+            <input type="time" id="hora" name="hora" required>
+        </div>
+
+        <button type="submit" onclick="alert('Consulta agendada!')">
+            Agendar Consulta
+        </button>
+
+    </form>
+
+    <div class="botaoarea">
+        <a href="index.html" class="botao">Voltar para a Página Inicial</a>
     </div>
+</section>
 
-    <div>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" placeholder="Digite seu email"><br><br>
-    </div>
-
-    <div>
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" placeholder="Digite seu telefone"><br><br>
-    </div>
-
-    <div>
-        <label for="data">Data da Consulta:</label><br>
-        <input type="date" id="data"><br><br>
-    </div>
-
-
-    <div>
-        <label for="hora">Hora da Consulta:</label><br>
-        <input type="time" id="hora"><br><br>
-    </div>
-
-    <div>
-        <button onclick="alert('Consulta agendada!')">Agendar</button>
-    </div>
-
-    <br>
-
-    <div class="botaoarea"><a href="index.html" class="botao">Volte Para a Pagina Inicial</a></div>
-        </section>
     </main>  
     
     
@@ -93,17 +97,18 @@
         <footer id="final">
             <div class="container">
                 <div class="ultima">
-                    <article>
+                    
                         <a href="#topo"><img src="imagens/logo.png"></a>
-                        <h2>FUNCIONAMENTO:</h2>
-                        <p>segunda a sexta: 07:00 as 19:00</p>
-                        <p>sábado e domingo: 08:00 as 15:00</p>
+                        <br>
+                        <h2>FUNCIONAMENTO:</h2><br>
+                        <p>segunda a sexta: 07:00 as 19:00  <br>
+                        sábado e domingo: 08:00 as 15:00</p> <br>
                         <div class="contatos">
                          <a href=""></a><img src="imagens/zap.png">
                         <a href=""></a><img src="imagens/insta.png">
                         <a href=""></a><img src="imagens/face.png">
                         </div>
-                    </article>
+                    
                 </div>
             </div>
         </footer>
